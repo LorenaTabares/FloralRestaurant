@@ -1,201 +1,242 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FloralRestaurant - Menú de la Corte</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/menu.css">
 </head>
+
 <body>
 
-    <main class="menu-page">
-            <script src="../components/nav.js"></script>
-        <header class="menu-header">
-            <h2>El Festín de las Flores</h2>
-            <p class="subtitle">Nuestra Carta de Temporada</p>
-            <div class="divider">🎀</div>
-            
-            <div class="menu-legend">
-                <span><small class="icon-badge veg">V</small> Vegetariano</span>
-                <span><small class="icon-badge gf">GF</small> Sin Gluten</span>
-                <span><small class="icon-badge df">DF</small> Libre de Lácteos</span>
-            </div>
+    <main>
+        <script src="../components/nav.js"></script>
+        <section class="hero-banner"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(187, 33, 92, 0.205)), url('../recursos/Gemini_Generated_Image_zhvm5bzhvm5bzhvm.png');">
 
-            <div class="filter-controls">
-                <button class="filter-btn active" data-filter="all">Todo el Banquete</button>
-                <button class="filter-btn" data-filter="entradas">L’Ouverture (Entradas)</button>
-                <button class="filter-btn" data-filter="fuertes">Les Chefs-d'œuvre (Fuertes)</button>
-                <button class="filter-btn" data-filter="postres">Douces Rêveries (Postres)</button>
-                <button class="filter-btn" data-filter="bebidas">Elixires (Bebidas)</button>
-            </div>
-        </header>
+        </section>
+        <section class="menu-page">
+            <header class="menu-header">
+                <h2>El Festín de las Flores</h2>
+                <p class="subtitle">Nuestra Carta de Temporada</p>
+                <div class="divider">🎀</div>
 
-        <div class="menu-grid" id="menu-items-container">
-            
-            <div class="menu-card item-entradas">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Carpaccio de Remolacha y Rosas</h4>
-                        <span class="price">$26.000</span>
-                    </div>
-                    <p class="description">Láminas finas de remolacha marinadas en balsámico de rosas, queso de cabra artesanal y nueces crocantes garrapiñadas.</p>
-                    <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span><span class="icon-badge gf" title="Sin Gluten">GF</span></div>
+                <div class="menu-legend">
+                    <span><small class="icon-badge veg">V</small> Vegetariano</span>
+                    <span><small class="icon-badge gf">GF</small> Sin Gluten</span>
+                    <span><small class="icon-badge df">DF</small> Libre de Lácteos</span>
                 </div>
-            </div>
 
-            <div class="menu-card menu-image-box item-entradas">
-                <img src="../recursos/descarga (19).jfif" alt="Entrada Icónica de la Casa">
-            </div>
-
-            <div class="menu-card item-entradas">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Camarones en Orquídea</h4>
-                        <span class="price">$38.000</span>
-                    </div>
-                    <p class="description">Camarones premium apanados en coco crujiente, servidos sobre una delicada cama de emulsión de mango y pétalos cítricos.</p>
-                    <div class="tags"><span class="icon-badge df" title="Libre de Lácteos">DF</span></div>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">Todo el Banquete</button>
+                    <button class="filter-btn" data-filter="entradas">L’Ouverture (Entradas)</button>
+                    <button class="filter-btn" data-filter="fuertes">Les Chefs-d'œuvre (Fuertes)</button>
+                    <button class="filter-btn" data-filter="postres">Douces Rêveries (Postres)</button>
+                    <button class="filter-btn" data-filter="bebidas">Elixires (Bebidas)</button>
                 </div>
-            </div>
+            </header>
 
-            <div class="menu-card item-entradas">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Tartaleta de Cebollas Caramelizadas</h4>
-                        <span class="price">$22.000</span>
+            <div class="menu-grid" id="menu-items-container">
+
+                <div class="menu-card item-entradas">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Carpaccio de Remolacha y Rosas</h4>
+                            <span class="price">$26.000</span>
+                        </div>
+                        <p class="description">Láminas finas de remolacha marinadas en balsámico de rosas, queso de
+                            cabra
+                            artesanal y nueces crocantes garrapiñadas.</p>
+                        <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span><span
+                                class="icon-badge gf" title="Sin Gluten">GF</span></div>
                     </div>
-                    <p class="description">Fina masa quebrada rellena de cebollas dulces confitadas al vino tinto de la casa y un toque de tomillo fresco de nuestro huerto.</p>
-                    <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span></div>
                 </div>
-            </div>
 
-            <div class="menu-card item-fuertes">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Lomo al Trapo "Victoria"</h4>
-                        <span class="price">$68.000</span>
+                <div class="menu-card menu-image-box item-entradas">
+                    <img src="../recursos/descarga (19).jfif" alt="Entrada Icónica de la Casa">
+                </div>
+
+                <div class="menu-card item-entradas">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Camarones en Orquídea</h4>
+                            <span class="price">$38.000</span>
+                        </div>
+                        <p class="description">Camarones premium apanados en coco crujiente, servidos sobre una delicada
+                            cama de emulsión de mango y pétalos cítricos.</p>
+                        <div class="tags"><span class="icon-badge df" title="Libre de Lácteos">DF</span></div>
                     </div>
-                    <p class="description">Medallón de res premium cocinado en reducción de frutos del bosque silvestres, acompañado de espárragos frescos envueltos en tocino ahumado.</p>
-                    <div class="tags"><span class="icon-badge gf" title="Sin Gluten">GF</span></div>
                 </div>
-            </div>
 
-            <div class="menu-card item-fuertes">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Pasta Primavera Rococó</h4>
-                        <span class="price">$48.000</span>
+                <div class="menu-card item-entradas">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Tartaleta de Cebollas Caramelizadas</h4>
+                            <span class="price">$22.000</span>
+                        </div>
+                        <p class="description">Fina masa quebrada rellena de cebollas dulces confitadas al vino tinto de
+                            la
+                            casa y un toque de tomillo fresco de nuestro huerto.</p>
+                        <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span></div>
                     </div>
-                    <p class="description">Pappardelle artesanal bañado en una suntuosa crema de queso parmesano, guisantes tiernos, flores de brócoli y esencia pura de trufa blanca.</p>
-                    <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span></div>
                 </div>
-            </div>
 
-            <div class="menu-card menu-image-box item-fuertes">
-                <img src="../recursos/descarga (23).jfif" alt="Plato Fuerte Emblemático">
-            </div>
-
-            <div class="menu-card item-fuertes">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Pato a la Lavanda</h4>
-                        <span class="price">$72.000</span>
+                <div class="menu-card item-fuertes">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Lomo al Trapo "Victoria"</h4>
+                            <span class="price">$68.000</span>
+                        </div>
+                        <p class="description">Medallón de res premium cocinado en reducción de frutos del bosque
+                            silvestres, acompañado de espárragos frescos envueltos en tocino ahumado.</p>
+                        <div class="tags"><span class="icon-badge gf" title="Sin Gluten">GF</span></div>
                     </div>
-                    <p class="description">Pechuga de pato tierna (magret) glaseada con miel orgánica de abejas y flores de lavanda, servido con zanahorias baby glaseadas.</p>
-                    <div class="tags"><span class="icon-badge gf" title="Sin Gluten">GF</span><span class="icon-badge df" title="Libre de Lácteos">DF</span></div>
                 </div>
-            </div>
 
-            <div class="menu-card item-fuertes">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Cebiche de Flores y Corvina</h4>
-                        <span class="price">$52.000</span>
+                <div class="menu-card item-fuertes">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Pasta Primavera Rococó</h4>
+                            <span class="price">$48.000</span>
+                        </div>
+                        <p class="description">Pappardelle artesanal bañado en una suntuosa crema de queso parmesano,
+                            guisantes tiernos, flores de brócoli y esencia pura de trufa blanca.</p>
+                        <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span></div>
                     </div>
-                    <p class="description">Cubos de corvina fresca curados en leche de tigre infusionada con hibisco (flor de Jamaica) y acompañados de crujientes chips de plátano morado.</p>
-                    <div class="tags"><span class="icon-badge gf" title="Sin Gluten">GF</span><span class="icon-badge df" title="Libre de Lácteos">DF</span></div>
                 </div>
-            </div>
 
-            <div class="menu-card item-postres">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Éclair de Pistacho y Azahar</h4>
-                        <span class="price">$18.000</span>
+                <div class="menu-card menu-image-box item-fuertes">
+                    <img src="../recursos/descarga (23).jfif" alt="Plato Fuerte Emblemático">
+                </div>
+
+                <div class="menu-card item-fuertes">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Pato a la Lavanda</h4>
+                            <span class="price">$72.000</span>
+                        </div>
+                        <p class="description">Pechuga de pato tierna (magret) glaseada con miel orgánica de abejas y
+                            flores
+                            de lavanda, servido con zanahorias baby glaseadas.</p>
+                        <div class="tags"><span class="icon-badge gf" title="Sin Gluten">GF</span><span
+                                class="icon-badge df" title="Libre de Lácteos">DF</span></div>
                     </div>
-                    <p class="description">Clásica masa choux francesa rellena de una tersa crema diplomata de pistachos tostados, decorada con hilos finos de chocolate blanco.</p>
-                    <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span></div>
                 </div>
-            </div>
 
-            <div class="menu-card item-postres">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Crème Brûlée de Jazmín</h4>
-                        <span class="price">$24.000</span>
+                <div class="menu-card item-fuertes">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Cebiche de Flores y Corvina</h4>
+                            <span class="price">$52.000</span>
+                        </div>
+                        <p class="description">Cubos de corvina fresca curados en leche de tigre infusionada con hibisco
+                            (flor de Jamaica) y acompañados de crujientes chips de plátano morado.</p>
+                        <div class="tags"><span class="icon-badge gf" title="Sin Gluten">GF</span><span
+                                class="icon-badge df" title="Libre de Lácteos">DF</span></div>
                     </div>
-                    <p class="description">Crema sedosa de vainilla de Papantla infusionada con sutiles flores de jazmín y coronada con una capa crujiente de azúcar sopleteada.</p>
-                    <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span><span class="icon-badge gf" title="Sin Gluten">GF</span></div>
                 </div>
-            </div>
 
-            <div class="menu-card menu-image-box item-postres">
-                <img src="../recursos/descarga (21).jfif" alt="Postre de la Realeza">
-            </div>
-
-            <div class="menu-card item-postres">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Tarta de Pera y Almendras</h4>
-                        <span class="price">$21.000</span>
+                <div class="menu-card item-postres">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Éclair de Pistacho y Azahar</h4>
+                            <span class="price">$18.000</span>
+                        </div>
+                        <p class="description">Clásica masa choux francesa rellena de una tersa crema diplomata de
+                            pistachos
+                            tostados, decorada con hilos finos de chocolate blanco.</p>
+                        <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span></div>
                     </div>
-                    <p class="description">Pera madura pochada con esmero en un almíbar perfumado de anís estrellado, horneada sobre una base crujiente de crema frangipane de almendras.</p>
-                    <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span></div>
                 </div>
-            </div>
 
-            <div class="menu-card item-bebidas">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Gin Tonic del Huerto</h4>
-                        <span class="price">$42.000</span>
+                <div class="menu-card item-postres">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Crème Brûlée de Jazmín</h4>
+                            <span class="price">$24.000</span>
+                        </div>
+                        <p class="description">Crema sedosa de vainilla de Papantla infusionada con sutiles flores de
+                            jazmín
+                            y coronada con una capa crujiente de azúcar sopleteada.</p>
+                        <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span><span
+                                class="icon-badge gf" title="Sin Gluten">GF</span></div>
                     </div>
-                    <p class="description">Ginebra botánica premium mezclada con tónica artesanal, bayas aromáticas de enebro, pétalos de rosa fresca y una rodaja refrescante de pepino.</p>
-                    <div class="tags"><span class="icon-badge gf" title="Sin Gluten">GF</span><span class="icon-badge df" title="Libre de Lácteos">DF</span></div>
                 </div>
-            </div>
 
-            <div class="menu-card item-bebidas">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Chocolate Amargo con Violetas</h4>
-                        <span class="price">$14.000</span>
+                <div class="menu-card menu-image-box item-postres">
+                    <img src="../recursos/descarga (21).jfif" alt="Postre de la Realeza">
+                </div>
+
+                <div class="menu-card item-postres">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Tarta de Pera y Almendras</h4>
+                            <span class="price">$21.000</span>
+                        </div>
+                        <p class="description">Pera madura pochada con esmero en un almíbar perfumado de anís
+                            estrellado,
+                            horneada sobre una base crujiente de crema frangipane de almendras.</p>
+                        <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span></div>
                     </div>
-                    <p class="description">Auténtico chocolate de origen santandereano al 70% infusionado con esencia natural de violetas francesas y decorado con nubes de mini malvaviscos.</p>
-                    <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span><span class="icon-badge gf" title="Sin Gluten">GF</span></div>
                 </div>
-            </div>
 
-            <div class="menu-card item-bebidas">
-                <div class="card-details">
-                    <div class="item-header">
-                        <h4>Sangría Blanca Floral</h4>
-                        <span class="price">$38.000</span>
+                <div class="menu-card item-bebidas">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Gin Tonic del Huerto</h4>
+                            <span class="price">$42.000</span>
+                        </div>
+                        <p class="description">Ginebra botánica premium mezclada con tónica artesanal, bayas aromáticas
+                            de
+                            enebro, pétalos de rosa fresca y una rodaja refrescante de pepino.</p>
+                        <div class="tags"><span class="icon-badge gf" title="Sin Gluten">GF</span><span
+                                class="icon-badge df" title="Libre de Lácteos">DF</span></div>
                     </div>
-                    <p class="description">Elegante copa de vino blanco afrutado combinado con lychees exóticos, fresas frescas de la sabana y una selección de flores comestibles de temporada.</p>
-                    <div class="tags"><span class="icon-badge gf" title="Sin Gluten">GF</span><span class="icon-badge df" title="Libre de Lácteos">DF</span></div>
                 </div>
-            </div>
-            <div class="menu-card menu-image-box item-bebidas">
-                <img src="../recursos/licor.jpg" alt="Postre de la Realeza">
-            </div>
 
-        </div>
+                <div class="menu-card item-bebidas">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Chocolate Amargo con Violetas</h4>
+                            <span class="price">$14.000</span>
+                        </div>
+                        <p class="description">Auténtico chocolate de origen santandereano al 70% infusionado con
+                            esencia
+                            natural de violetas francesas y decorado con nubes de mini malvaviscos.</p>
+                        <div class="tags"><span class="icon-badge veg" title="Vegetariano">V</span><span
+                                class="icon-badge gf" title="Sin Gluten">GF</span></div>
+                    </div>
+                </div>
+
+                <div class="menu-card item-bebidas">
+                    <div class="card-details">
+                        <div class="item-header">
+                            <h4>Sangría Blanca Floral</h4>
+                            <span class="price">$38.000</span>
+                        </div>
+                        <p class="description">Elegante copa de vino blanco afrutado combinado con lychees exóticos,
+                            fresas
+                            frescas de la sabana y una selección de flores comestibles de temporada.</p>
+                        <div class="tags"><span class="icon-badge gf" title="Sin Gluten">GF</span><span
+                                class="icon-badge df" title="Libre de Lácteos">DF</span></div>
+                    </div>
+                </div>
+                <div class="menu-card menu-image-box item-bebidas">
+                    <img src="../recursos/licor.jpg" alt="Postre de la Realeza">
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
 
     <script src="../components/menu.js"></script>
     <script src="../components/footer.js"></script>
 </body>
+
 </html>
