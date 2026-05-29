@@ -75,19 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
             color: #c5a059;
         }
 
-        .nav-links a::after {
-            content: '🌸';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%) scale(0);
-            font-size: 0.7rem;
-            transition: transform 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            transform: translateX(-50%) scale(1);
-        }
     `;
 
     // 4. Agregar los estilos y el elemento al inicio del body de la página

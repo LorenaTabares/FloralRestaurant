@@ -1,6 +1,3 @@
-/* ==========================================================================
-   ESTILOS GENERALES Y PALETA DE COLORES (ROCOCÓ / COQUETTE)
-   ========================================================================== */
 :root {
     --oro: #c5a059;
     --oro-viejo: #aa843f;
@@ -20,13 +17,11 @@ body {
     overflow-x: hidden;
 }
 
-/* ==========================================================================
-   1. HERO BANNER PRINCIPAL
-   ========================================================================== */
+/* HERO BANNER PRINCIPAL*/
 .hero-banner {
     position: relative;
     width: 100%;
-    height: 85vh; /* Ocupa el 85% de la altura visual */
+    height: 85vh; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,7 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-bottom: 3px double var(--oro); /* Línea doble clásica rococó */
+    border-bottom: 3px double var(--oro);
 }
 
 /* Marco elegante flotante interno (Simula un cuadro al óleo antiguo) */
@@ -56,6 +51,8 @@ body {
     max-width: 850px;
     padding: 0 20px;
 }
+
+
 
 .hero-content h2 {
     font-family: 'Pinyon Script', cursive;
@@ -89,12 +86,12 @@ body {
     background-color: var(--crema);
     color: var(--oro-viejo);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.85rem;
     border: 2px solid var(--oro);
-    border-radius: 40px; /* Redondeado Coquette */
+    border-radius: 40px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
@@ -107,7 +104,6 @@ body {
     box-shadow: 0 6px 20px rgba(255, 209, 220, 0.5);
 }
 
-/* Variante para el segundo botón */
 .button-secondary {
     background-color: transparent;
     color: var(--blanco);
@@ -120,9 +116,7 @@ body {
     border-color: var(--oro);
 }
 
-/* ==========================================================================
-   2. SECCIÓN DE INTRODUCCIÓN
-   ========================================================================== */
+/*INTRODUCCION EN INICIO*/
 .welcome-section {
     max-width: 750px;
     margin: 90px auto;
@@ -151,13 +145,12 @@ body {
     color: #555;
 }
 
-/* ==========================================================================
-   3. DESTACADOS DE LA EXPERIENCIA
-   ========================================================================== */
-.features-section {
+.features-section,
+.gallery-section,
+.packages-section {
     max-width: 1200px;
-    margin: 0 auto 100px auto;
-    padding: 0 20px;
+    margin: auto;
+    padding: 30px 20px 90px;
 }
 
 .features-title {
@@ -168,14 +161,18 @@ body {
     margin-bottom: 50px;
 }
 
-.features-grid {
+.features-grid,
+.packages-grid,
+.gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 /* Tarjetas de Experiencia */
-.feature-card {
+.feature-card,
+.package-card,
+.gallery-card {
     background-color: var(--crema);
     border: 1px solid rgba(197, 160, 89, 0.2);
     border-top: 4px solid var(--rosa-pastel);
@@ -187,9 +184,11 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature-card:hover {
+.feature-card:hover,
+.package-card:hover,
+.gallery-card:hover {
     transform: translateY(-7px);
-    box-shadow: 0 12px 25px rgba(219, 179, 184, 0.25);
+    box-shadow: 0 12px 25px rgba(240, 4, 24, 0.151);
 }
 
 .feature-icon {
@@ -198,7 +197,8 @@ body {
     display: inline-block;
 }
 
-.feature-card h4 {
+.feature-card h4,
+.package-card h3{
     font-size: 1.25rem;
     color: var(--oro-viejo);
     margin: 10px 0 15px 0;
@@ -213,9 +213,7 @@ body {
     margin: 0;
 }
 
-/* ==========================================================================
-   ANIMACIONES Y RESPONSIVO
-   ========================================================================== */
+/* ANIMACIONES Y RESPONSIVE*/
 @keyframes floating {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-8px); }
@@ -223,8 +221,76 @@ body {
 }
 
 @media (max-width: 768px) {
+    .hero-content h1 {font-size: 4rem;}
     .hero-content h2 { font-size: 4rem; }
     .hero-content p { font-size: 1.1rem; }
     .welcome-section h3 { font-size: 1.6rem; }
     .features-title { font-size: 3rem; }
 }
+
+/*estilo de eventos*/
+.hero-subtitle {
+    color: var(--rosa-pastel);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 6rem;
+    color: var(--oro);
+    margin: 15px 0;
+    text-shadow: 2px 2px 10px rgba(0,0,0,.8);
+}
+
+.price {
+    display: block;
+    color: var(--oro);
+    font-size: 1.6rem;
+    margin: 15px 0;
+}
+
+.package-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.package-card li {
+    margin: 10px 0;
+}
+
+.featured-package {
+    position: relative;
+    transform: scale(1.04);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--oro);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: .85rem;
+}
+
+.feature-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--oro);
+    padding: 5px;
+    background-color: var(--blanco);
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-image {
+    transform: scale(1.30);
+}
+
