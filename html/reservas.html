@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floral Restaurant - Reservas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body
+    class="min-h-screen bg-gradient-to-br from-[#fff7f8] via-[#fdecef] to-[#fffaf3] font-elegant text-[#4a4a4a]">
+
+    <!-- NAV -->
+    <script src="../components/nav.js"></script>
+
+
+    <section class="flex items-center justify-center px-6 py-16">
+        <div class="relative w-full max-w-5xl bg-[#fffdfb]/90 backdrop-blur-sm border border-[#e8d9c2] rounded-[35px] shadow-2xl overflow-hidden grid md:grid-cols-2">
+
+            <!-- FORMULARIO -->
+            <div class="p-8 md:p-12">
+
+                <div class="mb-8 text-center">
+                    <h3 class="font-script text-6xl text-[#aa843f]">
+                        Haz tu reserva
+                    </h3>
+
+                    <p class="text-[#4a4a4a] mt-2">
+                        Completa el formulario y vive una experiencia única.
+                    </p>
+                </div>
+
+                <form class="space-y-5">
+
+                    <!-- Nombre -->
+                    <div>
+                        <label class="block mb-2 font-medium text-[#aa843f]">
+                            Nombre completo
+                        </label>
+
+                        <input type="text"
+                            placeholder="Ingresa tu nombre"
+                            class="w-full rounded-2xl border border-[#e6d6c3] bg-[#fffaf8] px-5 py-3 outline-none transition duration-300 focus:border-[#dbb3b8] focus:ring-2 focus:ring-[#d4af37]/30" />
+                    </div>
+
+                    <!-- Telefono -->
+                    <div>
+                        <label class="block mb-2 font-medium text-[#aa843f]">
+                            Teléfono
+                        </label>
+
+                        <input type="text"
+                            placeholder="Ingresa tu teléfono"
+                            class="w-full rounded-2xl border border-[#e6d6c3] bg-[#fffaf8] px-5 py-3 outline-none transition duration-300 focus:border-[#dbb3b8] focus:ring-2 focus:ring-[#d4af37]/30" />
+                    </div>
+
+                    <!-- Tipo -->
+                    <div>
+                        <label class="block mb-2 font-medium text-[#aa843f]">
+                            Tipo de reserva
+                        </label>
+
+                        <select
+                            class="w-full rounded-2xl border border-[#e6d6c3] bg-[#fffaf8] px-5 py-3 outline-none transition duration-300 focus:border-[#dbb3b8] focus:ring-2 focus:ring-[#d4af37]/30">
+
+                            <option>Seleccionar</option>
+                            <option>Bodas rococó</option>
+                            <option>Té imperial</option>
+                            <option>Cenas privadas</option>
+                            <option>Aniversarios</option>
+                            <option>Eventos corporativos</option>
+                        </select>
+                    </div>
+
+                    <!-- Fecha y Hora -->
+                    <div class="grid md:grid-cols-2 gap-5">
+
+                        <div>
+                            <label class="block mb-2 font-medium text-[#aa843f]">
+                                Fecha de reserva
+                            </label>
+
+                            <input type="date"
+                                class="w-full rounded-2xl border border-[#e6d6c3] bg-[#fffaf8] px-5 py-3 outline-none transition duration-300 focus:border-[#dbb3b8] focus:ring-2 focus:ring-[#d4af37]/30" />
+                        </div>
+
+                        <div>
+                            <label class="block mb-2 font-medium text-[#aa843f]">
+                                Hora de reserva
+                            </label>
+
+                            <input type="time"
+                                class="w-full rounded-2xl border border-[#e6d6c3] bg-[#fffaf8] px-5 py-3 outline-none transition duration-300 focus:border-[#dbb3b8] focus:ring-2 focus:ring-[#d4af37]/30" />
+                        </div>
+
+                    </div>
+
+                    <!-- Correo -->
+                    <div>
+                        <label class="block mb-2 font-medium text-[#aa843f]">
+                            Correo electrónico
+                        </label>
+
+                        <input type="email"
+                            placeholder="Ingresa tu correo"
+                            class="w-full rounded-2xl border border-[#e6d6c3] bg-[#fffaf8] px-5 py-3 outline-none transition duration-300 focus:border-[#dbb3b8] focus:ring-2 focus:ring-[#d4af37]/30" />
+                    </div>
+
+                    <!-- Botón -->
+                    <button
+                        class="w-full mt-4 bg-gradient-to-r from-[#c5a059] to-[#aa843f] text-white py-4 rounded-2xl text-lg font-semibold shadow-lg hover:scale-[1.02] hover:shadow-xl transition duration-300">
+                        Reservar ahora
+                    </button>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
